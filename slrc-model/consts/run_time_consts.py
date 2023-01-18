@@ -6,7 +6,7 @@ class RTC(object):
   ################################################################################
   CONFIG = 3 # Changet this config value everytime a change in parameters is done.
   SIMULATOR = "sim_nloihi" # One of "sim_nloihi" or "sim_nengo".
-  BKND = "sim" # One of "sim" or "loihi" to be used with nengo_loihi.Simulator().
+  BKND = "loihi" # One of "sim" or "loihi" to be used with nengo_loihi.Simulator().
   ################################################################################
 
   # Network Parameters.
