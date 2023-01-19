@@ -1,5 +1,5 @@
 # spiking-models-for-TSC
-Code to accompany our paper: Spiking Models for Univariate Time Series Classification
+Code to accompany our paper: Reservoir based Spiking Models for Univariate Time Series Classification
 
 Two models are presented in the paper:
 * Spiking Legendre Reservoir Computing model
