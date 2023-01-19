@@ -20,8 +20,8 @@ def get_enc_transform_matrix(d):
 
   return t_mat
 
-def get_nengo_ldsnn_model(x, A_p, B_p, t_mat, lyr_e2h, lyr_h2o, d):
-  print("Running the LDSNN network...")
+def get_nengo_lsnn_model(x, A_p, B_p, t_mat, lyr_e2h, lyr_h2o, d):
+  print("Running the LSNN network...")
 
   with nengo.Network() as net:
     inp = nengo.Node(output = lambda t: x[int(t*1000)-1])
@@ -55,7 +55,7 @@ if __name__ == "__main__":
   np.random.seed(SEED)
   lyr_h2o = np.random.rand(3*d, 2)
 
-  net = get_nengo_ldsnn_model(x, A_p, B_p, t_mat, lyr_e2h, lyr_h2o, d)
+  net = get_nengo_lsnn_model(x, A_p, B_p, t_mat, lyr_e2h, lyr_h2o, d)
 
   with nengo_loihi.Simulator(net) as sim:
     sim.run(T/1000)
