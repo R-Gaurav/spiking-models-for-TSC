@@ -1,5 +1,6 @@
 # spiking-models-for-TSC
 Code to accompany our paper: [Reservoir based Spiking Models for Univariate Time Series Classification](https://www.frontiersin.org/articles/10.3389/fncom.2023.1148284/full)
+
 Accepted in Frontiers in Computational Neuroscience journal, 2023 (open access).
 
 Two models are presented in the paper:
